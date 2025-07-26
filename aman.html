@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANK Tech | Smart Website & AI Solutions by Real Minds</title>
+    <meta name="description" content="Looking for a website that feels human, yet powered by AI? ANK Tech blends real creativity and smart technology to craft fast, modern websites that help your business grow.">
+   <meta name="robots" content="index, follow">
+   <meta property="og:title" content="ANK Tech | Smart AI Websites">
+<meta property="og:description" content="Custom AI websites by Aman, Nitesh, and Kunal. Human-first, fast and free.">
+<meta property="og:image" content="https://i.ibb.co/4RyVg8H7/Screenshot-20250726-123646-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        dark: '#0f172a',
+                        light: '#f8fafc',
+                        accent: '#06b6d4'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2);
+        }
+        
+        .timeline-step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            z-index: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-step::before {
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body class="text-dark">
+<!-- Navigation bar -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- Logo -->
+      <div class="flex items-center">
+        <i class="fas fa-robot text-primary text-2xl mr-2"></i>
+        <span class="text-xl font-bold text-gray-800">ANK Tech</span>
+      </div>
+
+      <!--  Menu section -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="text-gray-700 hover:text-primary">Home</a>
+        <a href="#services" class="text-gray-700 hover:text-primary">Our Services</a>
+        <a href="#features" class="text-gray-700 hover:text-primary">Why Choose Us</a>
+        <a href="#how" class="text-gray-700 hover:text-primary">How It Works</a>
+        <a href="#usecase" class="text-gray-700 hover:text-primary">Use Cases</a>
+        <a href="#founder" class="text-gray-700 hover:text-primary">Founder</a>
+        <a href="#about" class="text-gray-700 hover:text-primary">About</a>
+        <a href="#contact" class="text-white bg-primary px-4 py-2 rounded hover:bg-opacity-90 transition">Contact</a>
+      </div>
+
+      <!-- Mobile menu section -->
+      <div class="md:hidden">
+        <button id="menu-button" class="text-gray-700 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+    <a href="#home" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+    <a href="#services" class="block py-2 text-gray-700 hover:text-primary">Our Services</a>
+    <a href="#features" class="block py-2 text-gray-700 hover:text-primary">Why Choose Us</a>
+    <a href="#how" class="block py-2 text-gray-700 hover:text-primary">How It Works</a>
+    <a href="#usecase" class="block py-2 text-gray-700 hover:text-primary">Use Cases</a>
+    <a href="#founder" class="block py-2 text-gray-700 hover:text-primary">Founder</a>
+    <a href="#about" class="block py-2 text-gray-700 hover:text-primary">About</a>
+    <a href="#contact" class="block py-2 mt-2 text-white bg-primary rounded px-3 text-center hover:bg-opacity-90">Contact</a>
+  </div>
+</nav>
+
+<!-- home Section -->
+<header>
+  <section id="home"" class="bg-gradient-to-br from-light to-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+  <span class="text-dark">Website Aapke Jaise Mehnati Logon Ke Liye Hi Bani Ho</span>
+</h1>
+<p class="text-lg text-gray-600 mb-8">
+  We create lightning-fast, custom websites designed to match your brand — built with smart AI, but always guided by real human insight.
+</p>
+      <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-md font-medium text-center transition glow-effect">
+                            Get Started <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                  </div>
+                </div>  
+                
+                <div class="relative">
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-xl glow-effect">
+                       <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Responsive AI website preview by ANK Tech" class="w-full h-auto">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark opacity-60"></div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Your Business. <span class="text-accent">Powered by AI.</span></h3>
+                            <p class="text-sm opacity-80">Ready in 7 days or less</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-secondary opacity-20"></div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-accent opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main>
+  <!-- Trust Badges -->
+<section class="bg-white py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center text-center">
+      
+      <div class="flex flex-col items-center">
+        <i class="fas fa-bolt text-3xl text-accent mb-2"></i>
+        <span class="font-semibold text-sm text-gray-700">7-Day Launch</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="fas fa-brain text-3xl text-primary mb-2"></i>
+        <span class="font-semibold text-sm text-gray-700">AI Smart Design</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="fas fa-mobile-alt text-3xl text-secondary mb-2"></i>
+        <span class="font-semibold text-sm text-gray-700">Mobile Ready</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="fas fa-chart-line text-3xl text-accent mb-2"></i>
+        <span class="font-semibold text-sm text-gray-700">SEO Optimized</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="fas fa-magnet text-3xl text-primary mb-2"></i>
+        
+        <span class="font-semibold text-sm text-gray-700">Conversion Focused</span>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <i class="fas fa-headset text-3xl text-secondary mb-2"></i>
+        <span class="font-semibold text-sm text-gray-700">24/7 Support</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- What We Offer -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary font-semibold">OUR SERVICES</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Smart Websites for <span class="gradient-text">Smart Businesses</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We combine artificial intelligence with expert design to create websites that work for your business 24/7.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition duration-300">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI-Powered Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our AI analyzes your business and creates a design that perfectly represents your brand and engages your customers.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-2"></i>
+                            <span>Brand-aligned visuals</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-2"></i>
+                            <span>Conversion-focused layouts</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-2"></i>
+                            <span>Personalized user journeys</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition duration-300">
+                    <div class="w-14 h-14 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lightning Fast</h3>
+                    <p class="text-gray-600 mb-4">
+                        Websites that load in milliseconds, keeping visitors engaged and improving your search rankings.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary mr-2"></i>
+                            <span>Optimized performance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary mr-2"></i>
+                            <span>Global CDN</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-secondary mr-2"></i>
+                            <span>99.9% uptime</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-sm feature-card transition duration-300">
+                    <div class="w-14 h-14 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Smart Automation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Built-in tools that save you time and help grow your business automatically.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Lead capture forms</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>AI chatbot integration</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-2"></i>
+                            <span>Analytics dashboard</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-primary font-semibold">WHY CHOOSE US</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6">The Future of <span class="gradient-text">Business Websites</span></h2>
+                    <p class="text-gray-600 mb-8">
+                        Traditional websites are static and outdated. Our AI-powered solutions adapt to your business needs and customer behavior, delivering real results.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary bg-opacity-10 text-primary">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium">Intelligent Design</h3>
+                                <p class="mt-1 text-gray-600">
+                                    Our AI creates designs that convert visitors into customers, based on proven psychological principles.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-secondary bg-opacity-10 text-secondary">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium">Blazing Speed</h3>
+                                <p class="mt-1 text-gray-600">
+                                    Optimized for performance with automatic image compression, lazy loading, and minimal code.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-accent bg-opacity-10 text-accent">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+<div class="ml-4">
+    <h3 class="text-lg font-medium">Conversion Ready</h3>
+    <p class="mt-1 text-gray-600">
+        Every layout and interaction is crafted to turn visitors into customers — automatically.
+    </p>
+</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smart business website features by ANK Tech" class="w-full h-auto">
+               
+  <div class="absolute inset-0 bg-gradient-to-t from-dark opacity-60">
+      </div>
+      <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-xl font-bold">Smart Features. <span class="text-accent">Real Results.</span></h3>
+                            <p class="text-sm opacity-80">See the difference AI can make</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-secondary opacity-20"></div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-primary opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- How It Works -->
+<section id="how" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="text-primary font-semibold">HOW IT WORKS</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Your Website in 4 Easy Steps</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        From first call to final launch, we guide you every step of the way.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary text-white flex items-center justify-center text-xl font-bold">1</div>
+        <h4 class="font-semibold mb-2">Discovery Call</h4>
+        <p class="text-gray-600 text-sm">We understand your goals and vision in a short strategy call.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary text-white flex items-center justify-center text-xl font-bold">2</div>
+        <h4 class="font-semibold mb-2">AI Design Phase</h4>
+        <p class="text-gray-600 text-sm">Our AI creates your first website version in just 48 hours.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-accent text-white flex items-center justify-center text-xl font-bold">3</div>
+        <h4 class="font-semibold mb-2">Review & Refine</h4>
+        <p class="text-gray-600 text-sm">You provide feedback and we fine-tune everything to perfection.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary text-white flex items-center justify-center text-xl font-bold">4</div>
+        <h4 class="font-semibold mb-2">Launch & Grow</h4>
+        <p class="text-gray-600 text-sm">Your site goes live and starts attracting customers instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Use Cases / Industries Section -->
+<section Id="usecase" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="text-primary font-semibold">USE CASES</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Built for Every <span class="gradient-text">Industry</span></h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Whether you're a local business or a global startup — our AI adapts to your goals.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Local Business -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+        <div class="text-primary text-3xl mb-4">
+          <i class="fas fa-store"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Local Businesses</h3>
+        <p class="text-gray-600 text-sm">
+          Get discovered faster with SEO-ready websites tailored to your service area.
+        </p>
+      </div>
+
+      <!-- Coaches / Educators -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+        <div class="text-secondary text-3xl mb-4">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Coaches & Creators</h3>
+        <p class="text-gray-600 text-sm">
+          Showcase your expertise with a site that books more calls and builds trust.
+        </p>
+      </div>
+
+      <!-- Tech Startups -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+        <div class="text-accent text-3xl mb-4">
+          <i class="fas fa-rocket"></i>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Tech Startups</h3>
+        <p class="text-gray-600 text-sm">
+          Launch your product with a fast, modern AI-built landing page — ready in days.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Founders Section -->
+<section id="founder" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center mb-12">
+      <span class="text-primary font-semibold">OUR TEAM</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Meet the <span class="gradient-text">Founders</span></h2>
+     <p class="text-gray-600 max-w-2xl mx-auto">
+  The co-founders of ANK Tech — Aman, Nitesh & Kunal — are on a mission to make smart websites accessible to every small business using real expertise, not just AI.
+</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Founder 1 -->
+      <div class="text-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="mx-auto mb-4 w-32 h-32 rounded-full overflow-hidden border-4 border-primary">
+          <img src="https://i.ibb.co/XrrFNzdT/IMG-20250520-WA0003-1.jpg" alt="Aman Kumar – Co-founder of ANK Tech" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-bold text-dark">Aman Kumar</h3>
+        <p class="text-primary text-sm mb-2">AI Strategy Lead</p>
+        <p class="text-gray-600 text-sm">
+          Former AI researcher with 2+ years in natural language processing and voice tech.
+        </p>
+      </div>
+
+      <!-- Founder 2 -->
+      <div class="text-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="mx-auto mb-4 w-32 h-32 rounded-full overflow-hidden border-4 border-secondary">
+          <img src="https://i.ibb.co/XxzfDHH7/IMG-20250316-WA0002.jpg" alt="nitesh chauhan co- founder of ANK Teck" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-bold text-dark">Nitesh chauhan</h3>
+        <p class="text-secondary text-sm mb-2">Creative & UI Director</p>
+        <p class="text-gray-600 text-sm">
+          Passionate designer blending aesthetics and functionality into intuitive UI.
+        </p>
+      </div>
+
+      <!-- Founder 3 -->
+      <div class="text-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <div class="mx-auto mb-4 w-32 h-32 rounded-full overflow-hidden border-4 border-accent">
+          <img src="https://i.ibb.co/FbKdt2KR/IMG-20250313-WA0000.jpg" alt="kunal Maheshwari co-founder of ANK teck" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-bold text-dark">kunal Maheshwari</h3>
+        <p class="text-accent text-sm mb-2">Tech & Automation Head</p>
+        <p class="text-gray-600 text-sm">
+          Architect of scalable systems and smart workflows that power automation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <span class="text-primary font-semibold">CONTACT</span>
+      <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Let’s Connect</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Fill out the form below and we’ll reach out to you shortly. Prefer phone? Call or WhatsApp us directly.
+      </p>
+    </div>
+
+   <form class="bg-gray-50 p-8 rounded-xl shadow-md space-y-6" onsubmit="sendToWhatsApp(); return false;">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+      <input id="name" type="text" required placeholder="Your Full Name" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+      <input id="email" type="email" required placeholder="you@example.com" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+    </div>
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+    <input id="phone" type="tel" required placeholder="e.g. 5421854721" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+    <textarea id="message" rows="4" required placeholder="How can we help you?" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition">
+      send a message 
+    </button>
+    
+  </div>
+</form>
+</main>
+ <!-- Footer Section -->
+<footer Id="about" class="bg-gray-50 text-dark py-12 mt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <!-- Logo and Tagline -->
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-bold mb-2">
+  <span class="text-primary">ANK</span><span class="text-secondary"> Tech</span>
+</h3>
+<p class="text-gray-600 text-sm">Custom AI Websites. Co-Founded by Aman, Nitesh & Kunal.</p>
+</div>
+  
+     
+  
+      <!-- Social Icons -->
+      <div class="flex justify-center gap-4 text-gray-500 text-lg">
+        <a href="https://wa.me/919315021828" target="_blank" class="hover:text-primary"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+919315021828" class="hover:text-primary"><i class="fas fa-phone"></i></a>
+        <a href="mailto:amankumar@email.com" class="hover:text-primary"><i class="fas fa-envelope"></i></a>
+        <a href="https://instagram.com/" class="hover:text-primary"><i class="fab fa-instagram"></i></a>
+        <a href="t.me/Amankr1212" class="hover:text-primary"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+
+    <div class="mt-8 border-t border-gray-200 pt-6 text-center text-sm text-gray-500">
+      <p>© 2025 AIWebBuild. All rights reserved.</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:text-primary">Privacy Policy</a>
+        <a href="#" class="hover:text-primary">Terms</a>
+        <a href="#" class="hover:text-primary">FAQ</a>
+      </div>
+    </div>
+  </div>
+</footer> 
+<script>
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const fullMessage = `New Contact:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+    const link = `https://wa.me/919315021828?text=${encodeURIComponent(fullMessage)}`;
+    window.open(link, "_blank");
+  }
+
+  // Yeh form ko WhatsApp se jodne wala magic line hai:
+  document.querySelector("form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    sendToWhatsApp();
+  });
+</script>
+
+<script>
+  const menuBtn = document.getElementById("menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  document.querySelectorAll("#mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  });
+</script>
+</script>
+</body>
+</html>
